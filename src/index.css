@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  src: url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}
+
+@theme {
+  --color-neutral-000: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(252, 6%, 83%);
+  --color-neutral-500: hsl(245, 15%, 58%);
+  --color-neutral-700: hsl(245, 19%, 35%);
+  --color-neutral-900: hsl(248, 70%, 10%);
+
+  --color-orange-500: hsl(7, 88%, 67%);
+  --color-orange-700: hsl(7, 71%, 60%);
+
+  /* Gradient */
+  --color-gradient-start: hsl(7, 86%, 67%);
+  --color-gradient-end: hsl(0, 0%, 100%);
+
+  --font-sans: "Inconsolata", monospace;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color-scheme: dark light;
+}
